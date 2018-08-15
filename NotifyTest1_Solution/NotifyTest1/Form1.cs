@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tulpep.NotificationWindow;
 
-namespace NotifyTest1
+namespace NotifyTest1 // Basic GUI code test
 {
     public partial class Form1 : Form
     {
@@ -20,11 +20,11 @@ namespace NotifyTest1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            PopupNotifier popup = new PopupNotifier();
-            popup.Image = Properties.Resources.info1;
+            PopupNotifier popup = new PopupNotifier(); // declaring variable
+            popup.Image = Properties.Resources.info1; // fetching image from where it has been stored
             popup.TitleText = "OnvuRetail Update Alert !";
             popup.ContentText = "Camera updates required (Now or Later)";
-            popup.Popup(); // shows the nortification
+            popup.Popup(); // Allows the notification to appear
         }
     }
 }
